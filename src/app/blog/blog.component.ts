@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { Post } from '../interface/post.interface';
+import { ServicesService } from '../service/services.service';
 
 @Component({
   selector: 'app-blog',
@@ -7,7 +10,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BlogComponent implements OnInit {
 
-  constructor() { }
+  posts: Post[];
+
+  constructor(
+    private serviceService: ServicesService,
+    private activateRoute: ActivatedRoute,
+  ) { }
 
   ngOnInit(): void {
   }
