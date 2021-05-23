@@ -1,3 +1,14 @@
-<p>blog works!</p>
-
-<p>{{posts}}</p>
+<div class="container">
+    <div class="mt-4 row" *ngFor="let post of posts">
+        <div class="col-2 card">
+            <img class="img-thumbnail" [src]="post.imagen">
+            <p class="text-img">{{post.fecha}}</p>
+            <p class="text-img">Categoria: {{post.categoria}}</p>
+        </div>
+        <div class="col-10 card">
+            <h3>Título: {{post.titulo}}</h3>
+            <h5>Autor: {{post.autor}}</h5>
+            <p>{{post.texto}}</p>
+        </div>
+    </div>
+</div>

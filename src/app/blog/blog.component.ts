@@ -18,6 +18,7 @@ export class BlogComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
+    this.posts = this.serviceService.getAllpost();
   }
 
 }
