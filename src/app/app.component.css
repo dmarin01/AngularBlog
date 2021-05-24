@@ -1,0 +1,9 @@
+#navbarText ul{
+    display: flex;
+    flex-direction: row;
+}
+
+ul li {
+    margin-left: 6em;
+    margin-right: 6em;
+}
